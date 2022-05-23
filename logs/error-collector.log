@@ -1,0 +1,4 @@
+[2022-05-23T14:58:08.198+08:00] [WARN] [http-nio-8001-exec-1-34] [com.bxfy.collector.web.IndexController] [USER-20201204UU] [192.168.0.101] [collector] [IndexController.java,21,com.bxfy.collector.web.IndexController,index] [我是一条warn日志] ## ''
+[2022-05-23T14:58:08.199+08:00] [ERROR] [http-nio-8001-exec-1-34] [com.bxfy.collector.web.IndexController] [USER-20201204UU] [192.168.0.101] [collector] [IndexController.java,23,com.bxfy.collector.web.IndexController,index] [我是一条error日志] ## ''
+[2022-05-23T15:27:56.827+08:00] [WARN] [http-nio-8001-exec-3-36] [com.bxfy.collector.web.IndexController] [USER-20201204UU] [192.168.0.101] [collector] [IndexController.java,21,com.bxfy.collector.web.IndexController,index] [我是一条warn日志] ## ''
+[2022-05-23T15:27:56.829+08:00] [ERROR] [http-nio-8001-exec-3-36] [com.bxfy.collector.web.IndexController] [USER-20201204UU] [192.168.0.101] [collector] [IndexController.java,23,com.bxfy.collector.web.IndexController,index] [我是一条error日志] ## ''

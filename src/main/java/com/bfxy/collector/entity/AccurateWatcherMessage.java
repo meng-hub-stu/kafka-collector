@@ -1,4 +1,4 @@
-package com.bxfy.collector.entity;
+package com.bfxy.collector.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

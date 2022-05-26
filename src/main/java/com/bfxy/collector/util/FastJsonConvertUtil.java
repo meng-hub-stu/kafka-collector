@@ -1,4 +1,4 @@
-package com.bxfy.collector.util;
+package com.bfxy.collector.util;
 
 import java.util.ArrayList;
 import java.util.List;

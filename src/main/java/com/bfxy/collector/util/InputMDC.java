@@ -1,4 +1,4 @@
-package com.bxfy.collector.util;
+package com.bfxy.collector.util;
 
 import org.jboss.logging.MDC;
 import org.springframework.context.EnvironmentAware;

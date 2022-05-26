@@ -1,6 +1,6 @@
-package com.bxfy.collector.web;
+package com.bfxy.collector.web;
 
-import com.bxfy.collector.util.InputMDC;
+import com.bfxy.collector.util.InputMDC;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

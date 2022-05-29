@@ -1,0 +1,41 @@
+#filebeat的yml文件的配置信息如下
+filebeat.prospectors:
+- input_type: log
+  paths: 
+    - /usr/local/logs/app-collector.log
+  document_type: "app-log"
+  multiline:
+    pattern: '^\['
+    negate: true
+    match: after
+    max_lines: 2000
+    timeout: 2s
+  fields:
+    logbiz: collector
+    logtopic: app-log-collector
+    evn: dev
+- input_type: log
+  paths: 
+    - /usr/local/logs/error-collector.log
+  document_type: "error-log"
+  multiline:
+    pattern: '^\['
+    negate: true
+    match: after
+    max_lines: 2000
+    timeout: 2s
+  fields:
+    logbiz: collector
+    logtopic: error-log-collector
+    evn: dev
+output.kafka:
+    enabled: true
+    hosts: ["192.168.32.221:9092","192.168.32.222:9092","192.168.32.223:9092"]
+    topic: "%{[fields.logtopic]}"
+    partition.hash:
+      reachable_only: true
+    compression: gzip
+    max_mesaage_bytes: 1000000
+    required_acks: 1
+logging.to_files: true    
+        
